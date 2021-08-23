@@ -9,6 +9,7 @@ branches:
 before_install:
   - gem install jekyll
   - gem install bundler -v 2.0.1
+  - bundle update jekyll
   - bundle lock --add-platform universal-java-11
 script:
   - JEKYLL_ENV=production bundle exec jekyll build --destination site
