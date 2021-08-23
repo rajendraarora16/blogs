@@ -17,11 +17,11 @@ deploy:
   repo: rajendraarora16/blogs.github.io
   provider: pages
   local-dir: ./site
-  target-branch: master
+  target-branch: main
   email: deploy@travis-ci.org
   name: Deployment Bot
   skip-cleanup: false 
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
-    branch: master
+    branch: main
